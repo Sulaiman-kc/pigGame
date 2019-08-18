@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgb(255, 60, 0),rgb(119, 128, 0));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameInterface{
+    background-color: #fff;
+    min-height: 500px;
+    width: 800px;
+}
+.row{
+    width: 100%;
+    height: 500px;
+    text-align: center;   
+    position: relative; 
+    align-self: center;
+    /* background-color: rgba(0, 0, 0, 0.267); */
+}
+.player1{
+    /* display: inline-block; */
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(248, 248, 248);
+}
+.player2{
+    float: left;
+    /* display: inline-block; */
+    width: 50%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.options h3{
+    cursor: pointer;
+    margin: 20px;
+    color: #000;
+}
+.options h3:hover{
+    cursor: pointer;
+    margin: 20px;
+    color: rgb(88, 88, 88)
+}
+.player-name{
+    margin-top: 30px;
+    color: #000;
+    font-size: 48px;
+}
+.player-score{
+    font-size: 80px;
+}
+.player-current-box{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    min-height: 70px;
+    margin: 30% auto;
+    color: #fff;
+}
+.dice{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.options{
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+.active{
+    background-color: rgb(238, 238, 238);
+}
+.winner{
+    font-size: 48px;
+    color: red;
+}
+.image{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
