@@ -40,12 +40,15 @@ body{
     height: 500px;
     background-color: rgb(255, 255, 255);
 }
-.options h3{
+.options .btn{
     cursor: pointer;
     margin: 20px;
     color: #000;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
 }
-.options h3:hover{
+.options .btn:hover{
     cursor: pointer;
     margin: 20px;
     color: rgb(88, 88, 88)
@@ -85,5 +88,81 @@ body{
 .image{
     width: 80px;
     height: 80px;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+@media screen and (max-width: 700px) {
+    .player-name{
+        font-size: 30px;
+    }
+    .winner{
+        font-size: 30px;
+        color: red;
+    }
+    .options .btn{
+        font-size: 14px;
+    }
+    .image{
+        width: 80px;
+        height: 80px;
+        margin: 40px auto;
+    }
+    .dice{
+        width: 50px;
+        height: 50px;
+    }
+    .player-current-box{
+        width: 70px;
+        min-height: 40px;
+        margin: 30% auto;
+        color: #fff;
+    }
+    .player-score{
+        font-size: 50px;
+    }
+  }
+
+
+
+
+  /* ###############playerNames################# */
+
+
+  .playerNames{
+    background-color: rgba(0, 0, 0, 0.685);
+    min-height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playerNames input{
+    width: 300px;
+    height: 30px;
+    margin: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    /* border-radius: 5px; */
+    background-color: transparent;
+    color: #fff;
+}
+.playerNames .btn{
+    margin: 20px 35%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+}
+.playerNames .btn:hover{
+    background-color: rgba(0, 0, 0, 0.445);
+    border-color: transparent;
+}
+label .title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    margin: 60px 0;
+}
+.playerNames img{
+    margin: 0 38%;
 }
